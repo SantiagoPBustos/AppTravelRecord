@@ -3,6 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTravelRecorder.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="blackColor">#000000</Color>
+            <Color x:Key="blueColor">#243356</Color>
+            
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="{StaticResource blueColor}"></Setter>
+            </Style>
 
+            <Style x:Key="normalButton" TargetType="Button">
+                <Setter Property="TextColor" Value="{StaticResource blueColor}"></Setter>
+            </Style>
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

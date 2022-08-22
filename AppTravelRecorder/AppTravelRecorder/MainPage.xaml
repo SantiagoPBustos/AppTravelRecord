@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppTravelRecorder.MainPage">
+             x:Class="AppTravelRecorder.MainPage"
+             NavigationPage.HasNavigationBar="False">
 
     <StackLayout Padding="20"
                  Margin="20"
@@ -18,10 +19,10 @@
         <Button x:Name="logInButton"
                 Text="LogIn"
                 Margin="0,20,0,0"
-                BackgroundColor="Black"
-                TextColor="White"
+                BackgroundColor="{StaticResource blackColor}"
                 CornerRadius="5"
-                Clicked="logInButton_Clicked"/>
+                Clicked="logInButton_Clicked"
+                Style="{StaticResource normalButton}"/>
 
         <Label x:Name="test"/>
 
